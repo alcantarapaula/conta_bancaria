@@ -7,8 +7,8 @@ let option: number;
 
 console.log(colors.fg.blue,'\n***************************************');
 console.log('                                       ');
-console.log('               DIGIBANK                ');
-console.log('                                       ');
+console.log(colors.fg.bluestrong, '               DIGIBANK                ', colors.reset);
+console.log(colors.fg.blue, '                                       ');
 console.log('***************************************');
 console.log('                                       ');
 console.log('  1 - Criar Conta                      ');
