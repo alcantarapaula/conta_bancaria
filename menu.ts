@@ -1,7 +1,7 @@
 'use stric'
 
 import leia from 'readline-sync';
-import { colors } from './src/util/colors';
+import { colors } from './src/util/Colors';
 
 let option: number;
 
