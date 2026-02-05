@@ -3,15 +3,17 @@
 import { Colors } from './src/util/Colors';
 import { Conta } from './src/model/Conta';
 import { Input } from './src/util/Input';
+import { ContaCorrente } from './src/model/ContaCorrente';
+import { ContaPoupanca } from './src/model/ContaPoupanca';
 
 let operacao: number;
 
 export function main() {
 
-  // Instanciar Objetos da Classe Conta
-  const c1 = new Conta(1, 1234, 'Paula', 1, 100000.00);
+  const cp = new ContaPoupanca(1, 1234, 'Paula', 2, 400000, 25);
 
-  c1.visualizar();
+  cp.visualizar();
+
 
   while(true) {
 
