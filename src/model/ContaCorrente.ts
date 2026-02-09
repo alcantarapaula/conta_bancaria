@@ -1,4 +1,5 @@
 import { Colors } from "../util/Colors";
+import { formatarMoeda } from "../util/Currency";
 import { Conta } from "./Conta";
 
 export class ContaCorrente extends Conta{
@@ -24,7 +25,7 @@ export class ContaCorrente extends Conta{
   // método visualizar sobrescrito
   public visualizar(): void {
     super.visualizar();
-    console.log(`Limite da Conta: R$ ${this._limite.toFixed(2)}`)
+    console.log(`Limite da Conta: ${formatarMoeda(this._limite)}`)
   }
 
   // método sacar sobrescrito
